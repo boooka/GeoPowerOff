@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load yandex_maps_tags %}
+
+{% block title %}GeoPowerOff{% endblock title %}
+
+{% block menu %}
+
+    <ul class="nav nav- well">
+        <li><a href="{% url "home" %}" id="menu-home">Главная</a></li>
+    </ul>
+
+    <table class="table table-bordered table-stripped table-hover" id="datatable">
+    <thead>
+        <tr>
+            <th>Адрес</th>
+        </tr>
+    </thead>
+    {% for obj in objs %}
+    <tbody>
+        <tr>
+            {% for o in obj %}
+                <td>{{ o }}</td>
+            {% endfor %}
+        </tr>
+    </tbody>
+    {% endfor %}
+    </table>
+{% endblock %}
