@@ -1,24 +1,37 @@
-{% extends "base.html" %}
-{% load yandex_maps_tags %}
 
+{% extends "base.html" %}
+
+{% block lib %}
+    <script type="text/javascript">
+        var points_all = [
+            {% for p in points %}[ {{ p.0|stringformat:"F" }}, {{ p.1|stringformat:"f" }} ],{% endfor %}
+        ]
+    </script>
+
+    <script type="text/javascript" src="/media/js/cluster.js"></script>
+{% endblock %}
 {% block title %}GeoPowerOff{% endblock title %}
 
 {% block menu %}
-
-    <ul class="nav nav- well">
+    <ul class="navbar navbar-fixed-top">
         <li><a href="{% url "home" %}" id="menu-home">Главная</a></li>
     </ul>
-
+{% endblock %}
+{% block body %}
+    <div id="map" class="row-fluid"></div>
     <table class="table table-bordered table-stripped table-hover" id="datatable">
     <thead>
+
         <tr>
-            <th>Адрес</th>
+            {% for v in objs.1.keys %}
+                <th>{{ v }}</th>
+            {% endfor %}
         </tr>
     </thead>
     {% for obj in objs %}
     <tbody>
         <tr>
-            {% for o in obj %}
+            {% for o in obj.values %}
                 <td>{{ o }}</td>
             {% endfor %}
         </tr>

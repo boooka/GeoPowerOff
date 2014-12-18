@@ -1,0 +1,73 @@
+.poweroutage_link{
+        display: inline-block; /* Строчно-блочный элемент */
+        text-decoration: none; /* Убираем подчёркивание у ссылки */
+        /*font: 18px/1 Arial, sans-serif; /* Рубленый шрифт */
+        cursor: pointer; /* Курсор в виде руки */
+        padding: 15px 40px;
+}
+
+.poweroutage_btn{
+/*	padding: 7px 30px;
+  	font-size:13px;
+	font-weight: bold;
+	color:#fff;
+	text-align: center;
+	border:solid 1px;*/
+/*
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+*/
+	box-shadow: inset 0 1px 0 0 #fff;
+	-moz-box-shadow: inset 0 1px 0 0 #fff;
+	-webkit-box-shadow: inset 0 1px 0 0 #fff;
+
+
+}
+
+.poweroutage_img{
+    margin: 0;
+}
+
+ul.poweroutage-type-links li {
+  float:left;
+  padding: 0 0 0 .5em;
+}
+
+ul li.poweroutage-type-first {
+  padding: 0 50px 0 15px;
+}
+
+ul.poweroutage-type-links li a {
+  color:#fff;
+  text-decoration: none;
+}
+
+.powerotage-valign-top {
+  text-align: center;
+  vertical-align: top;
+  border-right: 1px solid #CCCCCC;
+}
+
+.powerotage-first-column {
+   border-right: 1px solid #CCCCCC;
+}
+
+.powerotage-last-column{
+    text-align: center;
+}
+
+.powerotage-valign-center{
+  border-right: 1px solid #CCCCCC;
+  vertical-align: middle;
+  text-align: center;  
+}
+
+.powerotage-last-column-top {
+  text-align: center;
+  vertical-align: top;
+}
+
+.koe-tr-emergency-active {
+  background: none repeat scroll 0 0 #FFCBBD;
+}

@@ -1,0 +1,384 @@
+/**
+*   register form
+*/
+.billing-account{
+  float: left;
+  margin-right: 510px;
+  width: 200px;
+}
+
+.billing-account-book{
+  float: left;
+  margin: 0;
+  width: 65px;
+}
+
+.billing-account-slash{
+  float: left;
+  margin: 20px 3px 0;
+  width: 5px;
+}
+
+.billing-account-number{
+  float: left;
+}
+
+.billing-account-description{
+  float: none;
+  color: #666666;
+  font-size: 0.9167em;
+}
+
+
+/**
+*   cabinet
+*/
+.billing-cabinet{
+  font: 16px/1.5 'Droid Sans',sans-serif;
+  margin-top: .5em;
+}
+
+.billing-status-head{
+  /*background: -moz-linear-gradient(0% 100% 90deg, #F5F5F5, #FFFFFF) repeat scroll 0 0 transparent;*/
+
+  background-image: linear-gradient(bottom, rgb(245,245,245) 1%, rgb(255,255,255) 51%);
+  background-image: -o-linear-gradient(bottom, rgb(245,245,245) 1%, rgb(255,255,255) 51%);
+  background-image: -moz-linear-gradient(bottom, rgb(245,245,245) 1%, rgb(255,255,255) 51%);
+  background-image: -webkit-linear-gradient(bottom, rgb(245,245,245) 1%, rgb(255,255,255) 51%);
+  background-image: -ms-linear-gradient(bottom, rgb(245,245,245) 1%, rgb(255,255,255) 51%);
+
+  border-bottom: 3px solid #EBEBEB;
+  /*border-bottom: 3px solid #1A54E1;*/
+  font-weight: bold;
+  color: #007EB2;
+  font-size: 16px;
+  overflow: hidden;
+  padding: 0 5px;
+  width: 42em;
+}
+
+.billing-lastdateko-label{
+  float: left;
+  padding-right: 0.5em;
+  width: 11em;
+}
+
+.billing-ko-label{
+  float: left;
+  padding-right: 0.5em;
+  width: 11em;
+}
+
+.billing-lastpaydate-label{
+  float: left;
+  padding-right: 0.5em;
+  width: 8.5em;
+}
+
+.billing-lastpaysum-label{
+  float: left;
+  padding-right: 0.5em;
+  width: 9em;
+}
+
+.billing-status-data{
+  color: #007EB2;
+  font-size: 16px;
+}
+
+.billing-lastdateko{
+  float: left;
+  margin: 0.5em 0.5em 0;
+  padding-left: 2em;
+  width: 8.5em;
+}
+
+.billing-ko{
+  float: left;
+  margin: 0.5em 0.5em 0;
+  padding-left: 2em;
+  width: 8.5em;
+}
+
+.billing-ko-label1{
+  float: left;
+  font-size: .9em;
+  font-weight: 600;
+}
+
+.billing-ko-dig{
+  padding-left: 2.2em;
+}
+
+.billing-ko1{
+  float: none;
+  margin: 0;
+  padding: 0;
+  width: 8.5em;
+  font-size: 1.2em;
+}
+
+.billing-ko2{
+  float: none;
+  margin: 0;
+  padding: 0;
+  width: 8.5em;
+  font-size: 1.2em;
+}
+
+.billing-ko3{
+  float: none;
+  margin: 0;
+  padding: 0;
+  width: 8.5em;
+  font-size: 1.2em;
+}
+
+.billing-lastpaydate{
+ float: left;
+ margin: 0.5em 0.5em 0;
+ padding-left: 2em;
+ width: 6em;
+}
+
+.billing-lastpaysum{
+ float: left;
+ margin: 0.5em 0.5em 0;
+ padding-left: 2em;
+ width: 6em;
+}
+
+.billing-get-pass{
+  float: left;
+  width: 11em;
+  padding-right: 7em;
+  padding-top: 0.5em;
+}
+
+.billing-register-url{
+  float: left;
+  width: 11em;
+  padding-right: 7em;
+  padding-top: 0.5em;
+}
+
+.billing-about{
+  float: left;
+  width: 9em;
+  padding-top: 0.5em;
+}
+
+.billing-get-pass a, .billing-register-url a, .billing-about a{
+  font-size: 16px;
+}
+
+.billing-adding-url {
+  width: 45em;
+  margin-top: 1em;  
+  border-bottom: 2px solid #EBEBEB;
+}
+
+.billing-user-account-label{
+  color: #666666;
+  font-size: 14px;
+}
+
+.billing-user-account-value{
+  color: #696969;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+ul.billing-user-account-links{
+  margin: .5em 0 0 0;
+}
+
+ul.billing-user-account-links li	{
+  float:left;
+  padding: 0 0 0 .2em;
+}
+
+ul.billing-user-account-links li a {
+  color:#fff;
+  text-decoration: none;
+}
+
+ul.billing-user-account-links li a:link, a:visited {
+  color:#fff;
+  text-decoration: none;
+}
+
+ul.billing-user-account-links li.billing-first {
+  padding: 0;
+}
+
+
+.billing-first-semester{
+  float: left;
+  margin: 0 4em 0 0;
+  width: 130px;
+}
+
+.billing-second-semester{
+  float: left;
+  width: 135px;
+}
+
+.billing-textfield label {
+    float: left;
+    margin: 0.7em 0.2em 0 0;
+}
+
+
+/** puts each input option on the same line as its label (see attached image). */
+.billing-textfield input{
+   display: inline;
+   float: left;
+   margin-right: 5px !important;
+}
+
+.billing-jan input{
+   margin-left: 21px !important;
+}
+
+.billing-feb input{
+   margin-left: 23px !important;
+}
+
+.billing-mar input{
+  margin-left: 5px !important;
+}
+
+.billing-apr input{
+   margin-left: 18px !important;
+}
+
+.billing-may input{
+   margin-left: 12px !important;
+}
+
+.billing-jun input{
+   margin-left: 11px !important;
+}
+
+.billing-jul input{
+   margin-left: 19px !important;
+}
+
+.billing-aug input{
+   margin-left: 12px !important;
+}
+
+.billing-sep input{
+   margin-left: 5px !important;
+}
+
+.billing-oct input{
+   margin-left: 11px !important;
+}
+
+.billing-nov input{
+  margin-left: 6px !important;
+}
+
+.billing-dec input{
+   margin-left: 13px !important;
+}
+
+hr.billing {
+    border: none; /* Убираем границу */
+    background-color: #EBEBEB; /* Цвет линии */
+    color: #EBEBEB; /* Цвет линии для IE6-7 */
+    height: 2px; /* Толщина линии */
+    margin: 45px 0 0;
+}
+
+hr.billing-help {
+    border: none; /* Убираем границу */
+    background-color: #EBEBEB; /* Цвет линии */
+    color: #EBEBEB; /* Цвет линии для IE6-7 */
+    height: 2px; /* Толщина линии */
+    margin: 10px 0 10px 0;
+}
+
+p.billing-pay {
+  color: #666666;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 10px 0 0;
+}
+
+
+.btn{
+	padding: 7px 20px;
+  	font-size:13px;
+	font-weight: bold;
+	color:#fff;
+	text-align: center;
+	border:solid 1px;
+/*
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+*/
+	box-shadow: inset 0 1px 0 0 #fff;
+	-moz-box-shadow: inset 0 1px 0 0 #fff;
+	-webkit-box-shadow: inset 0 1px 0 0 #fff;
+
+
+}
+
+.link_btn{
+        display: inline-block; /* Строчно-блочный элемент */
+        text-decoration: none; /* Убираем подчёркивание у ссылки */
+        font: 14px/1 Arial, sans-serif; /* Рубленый шрифт */
+        font-weight: bold;
+        cursor: pointer; /* Курсор в виде руки */
+}
+
+.red{
+        background: #D64937;
+        border-color: #D14836;
+
+	background: -webkit-linear-gradient(top, #DC4A38, #D14836);
+	background: -moz-linear-gradient(top, #DC4A38, #D14836);
+	background: -ms-linear-gradient(top, #DC4A38, #D14836);
+	background: -o-linear-gradient(top, #DC4A38, #D14836);
+
+        text-shadow: 0 -1px 0 #B0281A;
+}
+.blue{
+	background: #2e8ce3;
+	border-color: #73c8f0;
+
+	background: -moz-linear-gradient(0% 100% 90deg,#2e8ce3, #73c2fd);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#73c2fd), to(#2e8ce3));
+
+	border-bottom-color:#196ebb;
+	text-shadow: 0 -1px 0 #196ebb;
+}
+
+.billing-p-title{
+  font-weight: bold;
+}
+
+.billing-p{
+  text-align: justify;
+}
+
+.billing-list li{
+  list-style-type: circle;
+}
+
+.billing-pay-privat{
+  float: left;
+}
+
+.billing-ipay-ua{
+  float: left;
+}
+
+.billing-paysystems{
+  width: 250px;
+  margin-right: 10px;
+}

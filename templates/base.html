@@ -5,30 +5,27 @@
     <title>DMC - {% block title %}{% endblock title %}</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <link rel="stylesheet" href="/media/css/bootstrap.css" media="screen" />
     <link rel="stylesheet" href="/media/css/base.css" />
     <link rel="stylesheet" href="/media/css/bootstrap-responsive.css" />
-
+    <script src="/media/js/bootstrap.js"></script>
     <link rel="shortcut icon" href="/media/img/favicon.png" />
     <link rel="apple-touch-icon" href="/media/img/favicon.png" />
 
-    <script src="/media/js/bootstrap.js"></script>
+
 
   {% block lib %}
   {% endblock %}
 </head>
 <body view_id name no_dhx="1">
+{% block menu %}
+{% endblock %}
+
 <div class="container">
-    <div class="row">
-        <div class="span2">
-            {% block menu %}
-            {% endblock %}
-        </div>
-        <div class="span10">
-            {% block body %}
-            {% endblock %}
-        </div>
+    <div class="row-fluid">
+        {% block body %}
+        {% endblock %}
     </div>
 </div>
 </body>
