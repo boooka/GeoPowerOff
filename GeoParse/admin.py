@@ -1,7 +1,7 @@
 from django.contrib import admin
-from yandex_maps.models import MapAndAddress
+from django.apps import apps
 
-admin.site.register([MapAndAddress,])
+admin.site.register([i for i in apps.get_models() if i not in admin.site._registry])
 
 admin.autodiscover()
 
