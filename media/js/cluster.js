@@ -53,10 +53,10 @@ ymaps.ready(function () {
          */
             getPointOptions = function () {
             return {
-                preset: 'islands#violetIcon'
+                preset: 'islands#greenIcon'
             };
         },
-        points = points_all
+        //points = points_all
         ,
         geoObjects = [];
 

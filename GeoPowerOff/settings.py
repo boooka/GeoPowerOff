@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.gis',
     'yandex_maps',
     'GeoParse',
 )
@@ -68,7 +69,7 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
-LANGUAGE_CODE = 'ru-ua'
+LANGUAGE_CODE = 'ru-UK'
 
 TIME_ZONE = 'Europe/Kiev'
 
@@ -93,3 +94,7 @@ TEMPLATE_DIRS = (
 TEMPLATE_DEBUG = DEBUG
 
 YANDEX_MAPS_API = 'AL22kVQBAAAAC1gMGAIAVrG6Umi3mNKR-Ne7aiYCttMQqFgAAAAAAAAAAAA5WNGTgIBPu1uHMXyafBU5AcfFew=='
+
+GEOIP_PATH = os.path.join(MEDIA_ROOT, 'geoip')
+GEOIP_COUNTRY = 'GeoIP.dat'
+GEOIP_CITY = 'GeoLiteCity.dat'

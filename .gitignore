@@ -52,3 +52,7 @@ docs/_build/
 
 # PyBuilder
 target/
+postgis-2.1.5
+pygraphviz-1.2
+postgis-2.1.5.tar.gz
+pygraphviz-1.2.tar.gz

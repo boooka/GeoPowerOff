@@ -3,9 +3,11 @@
 
 {% block lib %}
     <script type="text/javascript">
+        var points = $.parseJSON('{{ json_points }}');
+        console.log(points);
         var points_all = [
             {% for p in points %}[ {{ p.0|stringformat:"F" }}, {{ p.1|stringformat:"f" }} ],{% endfor %}
-        ]
+        ];
     </script>
 
     <script type="text/javascript" src="/media/js/cluster.js"></script>
